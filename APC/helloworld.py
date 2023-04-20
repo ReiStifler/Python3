@@ -1,7 +1,8 @@
-print('hello world');
+def somalista(numeros):
+    soma = 0
+    for i in numeros:
+        soma = soma + i
+    return soma
 
-int numero1,numero2;
 
-soma = (numero1+numero2);
-
-print(soma);
+print(somalista([1, 3, 5, 7, 9]))
