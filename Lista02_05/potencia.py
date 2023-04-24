@@ -1,5 +1,7 @@
 import math
 
+# function
+
 
 def powAPC(X, Y):
     X, Y = input().split()
@@ -9,4 +11,4 @@ def powAPC(X, Y):
 
 
 # main
-powAPC('X'+",", 'Y')
+powAPC('X', 'Y')
