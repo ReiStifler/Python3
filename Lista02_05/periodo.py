@@ -27,23 +27,34 @@ def qualPeriodo(m, a, s):
 
     # calcular a quantidade de semestres utilizando a quatidade de anos e a igualdade entre os semestres
 
-    if (ano_atual < ano_entrada):
-        if (semestre_atual < semestre_entrada):
+    if ano_atual < ano_entrada:
+        if semestre_atual < semestre_entrada:
             return
         return
-    if (qtd_anos == 0):
-        if (semestre_atual == semestre_entrada):
+
+    if qtd_anos == 0:
+        if semestre_atual == semestre_entrada:
             qtd_semestres = 1
         else:
-            if (semestre_atual == 1 and semestre_entrada == 1):
-                qtd_semestres = qtd_semestres + 3
-            else:
-                qtd_semestres = 2
+            qtd_semestres = qtd_anos + 2
     else:
-        if (semestre_atual == 1 and semestre_entrada == 1):
-            qtd_semestres = (qtd_anos*2) + 1
+        if semestre_atual == semestre_entrada:
+            qtd_semestres = (qtd_anos * 2) + 1
         else:
-            qtd_semestres = (qtd_anos*2)
+            qtd_semestres = qtd_anos * 2
+    # if (qtd_anos == 0):
+    #     if (semestre_atual == semestre_entrada):
+    #         qtd_semestres = 1
+    #     else:
+    #         if (semestre_atual == 1 and semestre_entrada == 1):
+    #             qtd_semestres = qtd_semestres + 3
+    #         else:
+    #             qtd_semestres = 2
+    # else:
+    #     if (semestre_atual == 1 and semestre_entrada == 1):
+    #         qtd_semestres = (qtd_anos*2) + 1
+    #     else:
+    #         qtd_semestres = (qtd_anos*2)
 
     print(qtd_semestres)
 
