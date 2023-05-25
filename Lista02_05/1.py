@@ -1,0 +1,6 @@
+caracter = input()
+print(caracter)
+print(caracter + caracter)
+print(caracter, caracter)
+print('2' + caracter)
+print("["+caracter+"]")
