@@ -22,6 +22,5 @@ def classificador(a, b, c):
 
 
 # main
-
 w, e, r = input().split()
 classificador(w, e, r)
