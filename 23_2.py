@@ -39,26 +39,29 @@ def ComoVaiSuaSaude(peso, sexo, altura):
 
     IMC = peso / (altura * altura)
 
+    # print(PI)
+    # print(IMC)
+    # print(abs((peso - PI)))
+    # print(0.05 * PI)
+    # print(0.1 * PI)
+
     if IMC < 18.5:
         if peso < PI:
             return "Atenção: Fique atento ao baixo peso!"
         else:
             return "Cuidado: Medidas acima do padrão!"
-    elif IMC < 25:
+    elif 18.5 < IMC < 25:
         if abs(peso - PI) <= 0.05 * PI:
             return "Você tem uma saúde ótima!"
         elif abs(peso - PI) <= 0.1 * PI:
             return "Você tem uma saúde boa."
-        else:
-            return "Cuidado: Medidas acima do padrão!"
-    elif IMC < 30:
+    elif 25 <= IMC < 30:
         if abs(peso - PI) > 0.1 * PI:
             return "Cuidado: Medidas acima do padrão!"
     elif IMC >= 30:
         if abs(peso - PI) > 0.1 * PI:
             return "Procure Ajuda: Excesso de medidas!"
-
-    return "Sem apontamento"
+    return "Sem apontamento."
 
 
 # main
