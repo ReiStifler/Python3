@@ -22,26 +22,25 @@ def quantosSemestres(m, a, s):
 
     ano_entrada = int(ano_entrada)
     semestre_entrada = int(semestre_entrada)
-    qtd_semestres = int()
     qtd_anos = ano_atual - ano_entrada
 
     # calcular a quantidade de semestres utilizando a quatidade de anos e a igualdade entre os semestres
 
-    if (ano_atual < ano_entrada):
-        if(semestre_atual < semestre_entrada):
+    if ano_atual < ano_entrada:
+        if semestre_atual < semestre_entrada:
             return
-    if (qtd_anos == 0):
-        if (semestre_atual == semestre_entrada):
+    if qtd_anos == 0:
+        if semestre_atual == semestre_entrada:
             qtd_semestres = 0
         else:
             qtd_semestres = qtd_anos + 1
     else:
-        if (semestre_atual == semestre_entrada):
-            qtd_semestres = (qtd_anos*2)
+        if semestre_atual == semestre_entrada:
+            qtd_semestres = qtd_anos * 2
         else:
-            qtd_semestres = (qtd_anos*2) - 1
+            qtd_semestres = (qtd_anos * 2) - 1
 
-    print(qtd_semestres)
+    return print(qtd_semestres)
 
 
 # main
