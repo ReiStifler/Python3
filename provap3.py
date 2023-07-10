@@ -71,3 +71,11 @@ print(f1(matricula))
 print(f2(matricula))
 print(f3(matricula))
 print(f4(matricula))
+
+
+# [21, 21, 21, 1, 31, 71, 71, 11, 91]
+# [2, 2, 2, 0, 3, 7, 7, 1, 9]
+# 9-1-7-7-3-0-2-2-
+# 2220
+# 29
+# 127
