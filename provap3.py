@@ -4,7 +4,7 @@ def geraEntrada1(mat):
     i = 0
     v = []
     while i <= r:
-        v.append(int(f"{d[i]}{d[r-1]}"))
+        v.append(int(f"{d[i]}{d[r-i]}"))
         i += 1
     return v
 
@@ -52,7 +52,7 @@ def f4(mat):
     for item in d:
         if item % 2 == 0:
             index1 = 0
-            index2 = dim / 2
+            index2 = dim // 2
         else:
             index1 = dim // 2
             index2 = dim - 1
